@@ -9,7 +9,7 @@ library(data.table)
 library(Matrix)
 
 # load the data
-env_landmark <- read.csv("E:/ABM/ABM Files/ABM_final/envlandmark.csv")
+env_landmark <- read.csv("./envlandmark.csv")
 
 ##### ===== 2. SETTING MODEL RUN PARAMETERS ----
 
@@ -759,11 +759,12 @@ repeat {
 }
 
 # save the dataframe for further analysis
-write.csv(fruits_visited,"E:/ABM/ABM Files/data/FAM_results/fruits_visited.csv")
-write.csv(agent_memory,"E:/ABM/ABM Files/data/FAM_results/agent_memory.csv")
-write.csv(strategy_memory,"E:/ABM/ABM Files/data/FAM_results/strategy_memory.csv")
+write.csv(fruits_visited,"./ouput/fruits_visited.csv")
+write.csv(agent_memory,"./ouput/agent_memory.csv")
+write.csv(strategy_memory,"./ouput/strategy_memory.csv")
 
 # removing the dataframe if needed 
 rm(fruits_visited)
 rm(agent_memory)
+
 rm(strategy_memory)
